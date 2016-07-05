@@ -1,7 +1,7 @@
 <header>
     <div class="row">
         <a class="col" href="#">
-            <img src="images/logo.png" alt="Vessel Tracking">
+            <img src="images/map.png" alt="Vessel Tracking">
         </a>
 
         <div class="col">
