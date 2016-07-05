@@ -13,14 +13,9 @@
     float: right;
 }
 
-/* Document */
-header {
-    border: 1px solid black;
-
-}
-
-footer {
-    border: 1px solid black;
+.search {
+    margin-top: 27px;
+    margin-right: 10px;
 }
 
 .headings {
@@ -28,6 +23,7 @@ footer {
     margin: 5px 10px;
 }
 
+/* Document */
 header h1 {
     margin: 0px 0px 5px;
 }
@@ -37,9 +33,35 @@ header h2 {
     margin: 0px 0px 0px;
 }
 
-.search {
-    margin-top: 27px;
-    margin-right: 10px;
+header > nav {
+    background: #006992;
+}
+
+header > nav > ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+header > nav > ul > li {
+    float: left;
+    list-style: none;
+    display: inline-block;
+}
+
+header > nav > ul > li > a {
+    text-decoration: none;
+    color: #FFFFFF;
+    display: block;
+    font-size: 18px;
+    padding: 15px 15px 16px;
+}
+
+header > nav > ul > li > a:hover {
+    background: #01425c;
+}
+
+header > nav > ul > li > a:active {
+    background: #01425c;
 }
 
 footer a {
@@ -50,4 +72,33 @@ footer a {
 
 footer a:hover {
     font-size: 19px;
+}
+
+.search > input.textSearch {
+    background: none repeat scroll 0 0 #FAFAFE;
+    border-radius: 8px;
+    border: 1px solid #E2E2E6;
+    border-radius: 2px 2px 2px 2px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1) inset;
+    color: #464B5A;
+    padding: 5px 5px;
+    margin: 0 5px 0 0;
+}
+
+.btn {
+    padding: 0px 10px;
+    height: 26px;
+    box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    zoom: 1;
+    cursor: pointer;
+    display: inline-block;
+    outline: medium none !important;
+    padding: 1px 10px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #BBBBBB;
+    color: #555555;
+    text-shadow: 0 1px 0 #FFFFFF;
 }
