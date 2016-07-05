@@ -104,6 +104,49 @@ footer a:hover {
 }
 
 #map {
-    width:100%;
-    height: 520px;
+    width: 100%;
+    height: 493px;
+}
+
+.container {
+    overflow: hidden;
+}
+
+.left {
+    display: block;
+    float: left;
+    margin: 5px;
+    width: 79%;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+.right {
+    float: right;
+    width: 18%;
+    border: 2px solid black;
+    border-radius: 4px;
+    background-color: #b3d1ff;
+    margin: 5px;
+}
+
+aside > ul {
+    padding: 0 0 0 0;
+}
+
+aside > ul > li {
+    list-style: none;
+    text-align: center;
+}
+
+aside > ul > li > a {
+    font-size: 18px;
+    padding: 4px 6px 4px 6px;
+    text-decoration: none;
+    display: block;
+    color: white;
+}
+
+aside > ul > li > a:hover {
+    background-color: #006992;
 }
