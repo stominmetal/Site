@@ -102,3 +102,8 @@ footer a:hover {
     color: #555555;
     text-shadow: 0 1px 0 #FFFFFF;
 }
+
+#map {
+    width:100%;
+    height: 520px;
+}
