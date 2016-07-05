@@ -5,8 +5,8 @@
         </a>
 
         <div class="col">
-            <h1>Vessel Tracking</h1>
-            <h2>AIS, satellite, ship tracking technology</h2>
+            <h1>Map</h1>
+            <h2>Google Map API Excersises</h2>
         </div>
 
         <div class="col col-r search">
@@ -18,8 +18,8 @@
     <nav class="row">
         <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">Cruise Ships</a></li>
-            <li><a href="#">Container Ships</a></li>
+            <li><a href="#">Cities</a></li>
+            <li><a href="#">Countries</a></li>
         </ul>
     </nav>
 

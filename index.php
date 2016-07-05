@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Map</title>
     <link href='css/app.css' rel='stylesheet' type='text/css'/>
 </head>
 <body>
