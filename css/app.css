@@ -1,0 +1,53 @@
+/*GRID*/
+.row {
+    overflow: hidden;
+}
+
+.col {
+    display: block;
+    float: left;
+    margin: 5px;
+}
+
+.col-r {
+    float: right;
+}
+
+/* Document */
+header {
+    border: 1px solid black;
+
+}
+
+footer {
+    border: 1px solid black;
+}
+
+.headings {
+    font-family: Arial;
+    margin: 5px 10px;
+}
+
+header h1 {
+    margin: 0px 0px 5px;
+}
+
+header h2 {
+    font-size: 13px;
+    margin: 0px 0px 0px;
+}
+
+.search {
+    margin-top: 27px;
+    margin-right: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    font-size: 14px;
+    margin: 6px 10px;
+}
+
+footer a:hover {
+    font-size: 19px;
+}
