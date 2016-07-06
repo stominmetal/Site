@@ -150,3 +150,50 @@ aside > ul > li > a {
 aside > ul > li > a:hover {
     background-color: #006992;
 }
+
+.col-m {
+    height: 290px;
+    width: 31%;
+    border-radius: 15px;
+    margin: 13px;
+}
+
+.login {
+    background-color: rgb(0, 105, 146);
+    text-align: center;
+    display: inline-block;
+    color: white;
+    font-size: 18px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.login-title {
+    font-size: 50px;
+    color: #006992;
+    text-align: center;
+}
+
+.login > input {
+    border-radius: 30px;
+    border: 3px solid #f2f2f2;
+    width: 60%;
+    height: 25px;
+    margin: 0 auto 10px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.labels {
+    font-size: 22px;
+    color: white;
+    padding-bottom: 0px;
+}
+
+.login > .btn {
+    padding-top: 20px;
+}
+
+.par {
+    font-size: 18px;
+}

@@ -17,9 +17,9 @@
 
     <nav class="row">
         <ul>
-            <li><a href="#">Home</a></li>
+            <li><a href="./index.php">Home</a></li>
             <li><a href="#">Cities</a></li>
-            <li><a href="#">Countries</a></li>
+            <li><a href="./login.php">Login</a></li>
         </ul>
     </nav>
 
