@@ -72,22 +72,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layout.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="layout.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/view/layout.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+            <state relative-caret-position="405">
+              <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
               <folding>
-                <marker date="1467890449574" expanded="true" signature="467:521" ph="..." />
-                <marker date="1467890449574" expanded="true" signature="587:658" ph="..." />
-                <marker date="1467890449574" expanded="true" signature="816:922" ph="..." />
-                <marker date="1467890449574" expanded="true" signature="963:1067" ph="..." />
+                <marker date="1467893085141" expanded="true" signature="467:521" ph="..." />
+                <marker date="1467893085141" expanded="true" signature="587:658" ph="..." />
+                <marker date="1467893085141" expanded="true" signature="816:922" ph="..." />
+                <marker date="1467893085141" expanded="true" signature="963:1067" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="register.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="register.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/register.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
@@ -143,12 +143,12 @@
         <option value="$PROJECT_DIR$/view/_login.php" />
         <option value="$PROJECT_DIR$/view/_header.php" />
         <option value="$PROJECT_DIR$/pages/_izosa.php" />
-        <option value="$PROJECT_DIR$/view/layout.php" />
         <option value="$PROJECT_DIR$/pages/login.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/css/login.css" />
         <option value="$PROJECT_DIR$/pages/register_user.php" />
         <option value="$PROJECT_DIR$/pages/register.php" />
+        <option value="$PROJECT_DIR$/view/layout.php" />
       </list>
     </option>
   </component>
@@ -311,18 +311,18 @@
       <workItem from="1467793222363" duration="2116000" />
       <workItem from="1467807026936" duration="1913000" />
       <workItem from="1467808965282" duration="1572000" />
-      <workItem from="1467830277779" duration="12726000" />
+      <workItem from="1467830277779" duration="13382000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35759000" />
+    <option name="totallyTimeSpent" value="36415000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18276283" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18276283" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17420538" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -610,19 +610,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/layout.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
-          <folding>
-            <marker date="1467890449574" expanded="true" signature="467:521" ph="..." />
-            <marker date="1467890449574" expanded="true" signature="587:658" ph="..." />
-            <marker date="1467890449574" expanded="true" signature="816:922" ph="..." />
-            <marker date="1467890449574" expanded="true" signature="963:1067" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/home.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -676,6 +663,19 @@
         <state relative-caret-position="255">
           <caret line="15" column="97" selection-start-line="15" selection-start-column="97" selection-end-line="15" selection-end-column="97" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/layout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+          <folding>
+            <marker date="1467893085141" expanded="true" signature="467:521" ph="..." />
+            <marker date="1467893085141" expanded="true" signature="587:658" ph="..." />
+            <marker date="1467893085141" expanded="true" signature="816:922" ph="..." />
+            <marker date="1467893085141" expanded="true" signature="963:1067" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

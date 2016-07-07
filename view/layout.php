@@ -14,11 +14,11 @@
 <div class="container">
     <?php
         if(in_array($page, ['login', 'register'])){
-            include(__DIR__."\..\pages\\".$page.'.php');
+            include(__DIR__."/../pages//".$page.'.php');
         } else {?>
     <div class="left">
         <!--Content-->
-        <?php include(__DIR__.'\..\pages\\'.$page.'.php'); ?>
+        <?php include(__DIR__.'/../pages//'.$page.'.php'); ?>
     </div>
     <div class="right">
         <?php
