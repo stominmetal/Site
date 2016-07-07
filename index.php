@@ -1,43 +1,30 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Map</title>
-    <link href='css/app.css' rel='stylesheet' type='text/css'/>
-</head>
-<body>
+<?php
 
-<!--Header-->
-<?php include("modules/_header.php"); ?>
+// default page
+$defaultPage = 'home';
 
-<div class="container">
-    <div class="left">
-        <!--Content-->
-        <?php include("modules/_content.php"); ?>
-    </div>
-    <div class="right">
-        <!--Aside-->
-        <?php include("modules/_aside.php") ?>
-    </div>
-</div>
+// available pages
+$pages = [];
 
-<hr>
+$files = scandir('pages');
+unset($files[0]);
+unset($files[1]);
 
-<!--Footer-->
-<?php include("modules/_footer.php"); ?>
+foreach ($files as $file) {
+    $pages[] = str_replace('.php', '', $file);
+}
 
-<!--jQuery Library-->
-<script src="https://code.jquery.com/jquery-3.0.0.min.js"
-        integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous">
-</script>
+// router
+if (isset($_GET['page'])) {
+    if (in_array($_GET['page'], $pages)) {
+        $page = $_GET['page'];
+    } else {
+        $page = $defaultPage;
+    }
+} else {
+    $page = $defaultPage;
+}
 
-<!--Google Maps API Library-->
-<script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD73w03Ds7-bienx-1VKScLJernyc7be4c">
-</script>
+// render view
+require_once 'view/layout.php';
 
-<!--Local JavaScript Files Directory-->
-<script src="js/app.js"></script>
-
-</body>
-</html>
