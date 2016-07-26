@@ -1,32 +1,40 @@
-var map;
+// <editor-fold desc="Redirects" defaultstate="collapsed">
 
-$('#belguim').click(function () {
-    mapChange(50.5039, 4.4699);
-});
-$('#iceland').click(function () {
-    mapChange(64.9631, -19.0208);
-});
-$('#france').click(function () {
-    mapChange(46.2276, 2.2137);
-});
-$('#bulgaria').click(function () {
-    mapChange(42.7339, 25.4858);
+
+$('#home').click(function () {
+    window.location.href = '?page=home';
 });
 
-function mapChange(lat, lon) {
-    map.setCenter(new google.maps.LatLng(lat, lon));
+$('#login').click(function () {
+    window.location.href = '?page=login';
+});
+
+
+// </editor-fold>
+
+// <editor-fold desc="Validation" defaultstate="collapsed">
+
+function validateForm() {
+    var username = document.forms["my_form"]["username"].value;
+    var fullname = document.forms["my_form"]["fullname"].value;
+    var pass1 = document.forms["my_form"]["password"].value;
+    var pass2 = document.forms["my_form"]["passwordConfirm"].value;
+
+    if (username.length < 3) {
+        $(".message").html("Username must be at least 3 characters!");
+        return false;
+    }
+    if (fullname.length < 3) {
+        $(".message").html("Full Name must be at least 3 characters!");
+        return false;
+    }
+    if (pass1.length < 6) {
+        $(".message").html("Password must be at least 6 characters!");
+        return false;
+    }
+    if (pass1 != pass2) {
+        $(".message").html("Passwords do not match!");
+        return false;
+    }
+    return true;
 }
-
-function mapInit() {
-    var mapProp = {
-        center: new google.maps.LatLng(51.508742, -0.120850),
-        zoom: 7,
-        mapTypeId: google.maps.MapTypeId.ROADMAP
-    };
-    
-    map = new google.maps.Map($('#map')[0], mapProp);
-}
-
-$(function () {
-    mapInit();
-});

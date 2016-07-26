@@ -1,5 +1,11 @@
 <?php
 
+// start session
+session_start();
+
+// db connection
+require_once ('connection.php');
+
 // default page
 $defaultPage = 'home';
 
@@ -27,4 +33,3 @@ if (isset($_GET['page'])) {
 
 // render view
 require_once 'view/layout.php';
-

@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <title>Map</title>
     <link href='css/app.css' rel='stylesheet' type='text/css'/>
-    <link href='css/login.css' rel='stylesheet' type='text/css'/>
+    <link href='css/login.css' rel='stylesheet' type='text/css'>
+    <script src="js/app.js"></script>
 </head>
 <body>
 
@@ -13,7 +14,7 @@
 
 <div class="container">
     <?php
-        if(in_array($page, ['login', 'register'])){
+        if(!(in_array($page, ['home']))){
             include(__DIR__."/../pages//".$page.'.php');
         } else {?>
     <div class="left">
@@ -28,8 +29,6 @@
     <?php } ?>
 </div>
 
-<hr>
-
 <!--Footer-->
 <?php include("_footer.php"); ?>
 
@@ -43,8 +42,13 @@
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD73w03Ds7-bienx-1VKScLJernyc7be4c">
 </script>
 
+<!--JS-->
+<?php
+include("_js_vars.php");
+?>
+
 <!--Local JavaScript Files Directory-->
-<script src="js/app.js"></script>
+<script src="js/map.js"></script>
 
 </body>
 </html>

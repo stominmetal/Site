@@ -1,6 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component name="dataSourceStorage">
-  <data-source name="MySQL - blog@localhost" uuid="f2a18e40-49e0-4891-92ef-d86ac6d98a6b">
-    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  <data-source name="MySQL - site@localhost" uuid="9f565a15-9308-4b27-924b-7035b00b9441">
+    <database-info product="MySQL" version="5.5.5-10.1.13-MariaDB" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+      <schema id="1" name="site">
+        <visible>1</visible>
+      </schema>
+      <table id="2" parent="1" name="users"/>
+      <table id="3" parent="1" name="photos"/>
+      <column id="4" parent="2" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="5" parent="2" name="username">
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="6" parent="2" name="password">
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="7" parent="2" name="fullname">
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <key id="8" parent="2" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="9" parent="3" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="10" parent="3" name="user_id">
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="11" parent="3" name="lat">
+        <data-type>double|0</data-type>
+      </column>
+      <column id="12" parent="3" name="long">
+        <data-type>double|0</data-type>
+      </column>
+      <index id="13" parent="3" name="photos_users_id_fk">
+        <columns>user_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="14" parent="3" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="15" parent="3" name="photos_users_id_fk">
+        <columns>user_id</columns>
+        <ref-key>~.users.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+    </database-model>
   </data-source>
 </component>

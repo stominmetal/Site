@@ -64,14 +64,25 @@ header > nav > ul > li > a:active {
     background: #01425c;
 }
 
+footer {
+    font-size: 18px;
+    color: white;
+    background: #006992;
+    border-top: 2px solid black;
+    text-align: inherit;
+}
+
 footer a {
     text-decoration: none;
-    font-size: 14px;
-    margin: 6px 10px;
+    font-size: 18px;
+    margin: 0;
+    color: white;
+    padding: 10px;
 }
 
 footer a:hover {
-    font-size: 19px;
+    background: #01425c;
+    margin: 0;
 }
 
 .search > input.textSearch {
@@ -100,7 +111,15 @@ footer a:hover {
     text-decoration: none;
     border: 1px solid #BBBBBB;
     color: #555555;
-    text-shadow: 0 1px 0 #FFFFFF;
+    text-shadow: 0 2px 0 #FFFFFF;
+}
+
+a .btn {
+    background-color: #ee8f04;
+}
+
+form > input > .btn {
+    background-color: #ee8f04;
 }
 
 #map {
@@ -149,4 +168,14 @@ aside > ul > li > a {
 
 aside > ul > li > a:hover {
     background-color: #006992;
+}
+
+.hello {
+    font-size: 18px;
+}
+
+.redBtn {
+    background: #ee8f04;
+    color: white;
+    text-shadow: none;
 }

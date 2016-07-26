@@ -1,4 +1,3 @@
-
 .login-title {
     font-size: 36px;
     /*color: #006992;*/
@@ -17,14 +16,23 @@
     border-radius: 8px;
 }
 
-.login  label{
+.border {
+    text-align: center;
+    color: #FFFFFF;
+    padding: 10px;
+    max-width: 300px;
+    margin: 30px auto;
+    border-radius: 8px;
+}
+
+.login label{
     display: inline-block;
     padding: 8px;
     width: 70px;
     text-align: right;
 }
 
-.login  input {
+.login input {
     border-radius: 7px;
     border: 3px solid #f2f2f2;
     margin: 0 auto 18px;
@@ -32,7 +40,7 @@
     font-size: 15px;
 }
 
-.login  input.btnLogin {
+.login input.btnLogin {
     width: 100%;
     background: #ee8f04;
     border: 0px;
@@ -55,9 +63,45 @@
 }
 
 .register-container{
-    max-width: 350px;
+    max-width: 428px;
+}
+
+.authentication {
+    max-width: 450px;
+    margin: 0;
+    color: #000000;
+}
+
+.authentication h2 {
+    color: #ee8f04;
+    font-style: inherit;
 }
 
 .register-container  label{
     width: 130px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.table {
+    border: 2px solid grey;
+}
+
+th {
+    background-color: #ee8f04;
+}
+
+td {
+    background-color: white;
+    color: black;
+}
+
+.message {
+    color: #FF0000;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
 }
