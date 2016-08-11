@@ -18,14 +18,15 @@
                 $password = $_POST['password'];
                 global $con;
 
-                $statement = $con->prepare("SELECT fullname, password FROM users WHERE username = ?");
+                $statement = $con->prepare("SELECT fullname, password, id FROM users WHERE username = ?");
                 $statement->bind_param("s", $username);
                 $statement->execute();
                 $result = $statement->get_result()->fetch_assoc();
                 if (password_verify($password, $result['password'])) {
                     $_SESSION['user'] = [
                         'username' => $username,
-                        'fullname' => $result['fullname']
+                        'fullname' => $result['fullname'],
+                        'id' => $result['id']
                     ];
                     redirect("?page=home");
 

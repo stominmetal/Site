@@ -1,32 +1,57 @@
 <div class="row">
     <div class="login register-container">
-        <form method="post">
-            <?php if(!(isset($_POST['username']) && isset($_POST['lat']) && isset($_POST['long']))) { ?>
-            <h1 class="login-title">Upload Image</h1>
-            <label for="username">Username</label>
-            <input type="text" name="username" id="username" placeholder="Enter uploader's username" required>
+        <form method="post" enctype="multipart/form-data">
+                <?php if (isset($_POST['upload'])) {
 
-            <label for="lat">Latitude</label>
-            <input type="text" name="lat" id="lat" placeholder="Enter photo's latitude" required>
+                    global $con;
+                    $user_id = $_SESSION['user']['id'];
+                    $lat = $_POST['lat'];
+                    $long = $_POST['long'];
+                    $comment = $_POST['comment'];
+                    $filename = uniqid() . ".jpg";
+                    $filepath = "photos/" . $filename;
 
-            <label for="long">Longitude</label>
-            <input type="text" name="long" id="long" placeholder="Enter photo's longitude" required>
+                    $exif = exif_read_data($_FILES['UFile']['tmp_name']);
 
-            <label for="choosePic">Choose picture</label>
-            <input type="file" name="choosePic" id="choosePic">
+                    if (isset($exif['Make']) || isset($exif['DateTime']) || isset($exif['Model'])) {
+                        $time = $exif['DateTime'];
+                        $model = $exif['Make'] . " " . $exif['Model'];
+                    } else {
+                        $time = "N/A";
+                        $model = "N/A";
+                    }
 
-            <label for="comment">Comment</label>
-            <textarea style="width: 271px" name="comment" id="comment" placeholder="Enter some comment"></textarea>
+                    $insert = $con->prepare("INSERT INTO photos (`user_id`, `lat`, `long`, `date`, `device_model`, `comment`, `filename`) VALUES (?,?,?,?,?,?,?)");
+                    $insert->bind_param("iddssss", $user_id, $lat, $long, $time, $model, $comment, $filename);
+                    $insert->execute();
+                    $success = $insert->fetch();
+                    $insert->close();
 
-            <input type="submit" class="btnLogin" value="Upload">
+                    copy($_FILES['UFile']['tmp_name'], $filepath);
+                    make_thumb($filepath, "thumbs/" . $filename, 200);
+
+                    redirect("?page=thank you");
+
+            } ?>
+            <?php if (isset($_SESSION['user'])) { ?>
+                <h1 class="login-title">Upload Image</h1>
+
+                <label for="lat">Latitude</label>
+                <input type="text" name="lat" id="lat" placeholder="Enter photo's latitude" required>
+
+                <label for="long">Longitude</label>
+                <input type="text" name="long" id="long" placeholder="Enter photo's longitude" required>
+
+                <label for="UFile">Choose picture</label>
+                <input type=file name=UFile id="choosePic">
+
+                <label for="comment">Comment</label>
+                <textarea style="width: 271px" name="comment" id="comment" placeholder="Enter some comment"></textarea>
+
+                <input type="submit" class="btnLogin" name="upload" value="Upload">
+
             <?php } else {
-                $username = $_POST['username'];
-                $lat = $_POST['lat'];
-                $long = $_POST['long'];
-                $chosenPic = $_POST['choosePic'];
-                $comment = $_POST['comment'];
-
-
+                redirect("?page=notLoggedIn");
             } ?>
         </form>
     </div>

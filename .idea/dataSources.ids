@@ -1,63 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component name="dataSourceStorage">
-  <data-source name="MySQL - site@localhost" uuid="9f565a15-9308-4b27-924b-7035b00b9441">
+  <data-source name="MySQL - vitron_stomin@localhost" uuid="3de8c040-30d6-49d5-977c-153a2b7a7627">
     <database-info product="MySQL" version="5.5.5-10.1.13-MariaDB" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
       <extra-name-characters>#@</extra-name-characters>
       <identifier-quote-string>`</identifier-quote-string>
     </database-info>
     <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
     <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
-      <schema id="1" name="site">
+      <schema id="1" name="vitron_stomin">
         <visible>1</visible>
       </schema>
-      <table id="2" parent="1" name="users"/>
-      <table id="3" parent="1" name="photos"/>
-      <column id="4" parent="2" name="id">
+      <schema id="2" name="blog"/>
+      <schema id="3" name="excercises"/>
+      <schema id="4" name="information_schema"/>
+      <schema id="5" name="mysql"/>
+      <schema id="6" name="performance_schema"/>
+      <schema id="7" name="phpmyadmin"/>
+      <schema id="8" name="test"/>
+      <schema id="9" name="testsql"/>
+      <table id="10" parent="1" name="photos"/>
+      <table id="11" parent="1" name="users"/>
+      <column id="12" parent="10" name="id">
         <mandatory>1</mandatory>
         <data-type>int(11)|0</data-type>
         <sequence-identity>1</sequence-identity>
       </column>
-      <column id="5" parent="2" name="username">
-        <data-type>varchar(50)|0</data-type>
+      <column id="13" parent="10" name="user_id">
+        <data-type>int(11)|0</data-type>
       </column>
-      <column id="6" parent="2" name="password">
-        <data-type>varchar(100)|0</data-type>
-      </column>
-      <column id="7" parent="2" name="fullname">
-        <data-type>varchar(50)|0</data-type>
-      </column>
-      <key id="8" parent="2" name="PRIMARY">
-        <columns>id</columns>
-        <primary>1</primary>
-      </key>
-      <column id="9" parent="3" name="id">
+      <column id="14" parent="10" name="upload_time">
         <mandatory>1</mandatory>
-        <data-type>int(11)|0</data-type>
-        <sequence-identity>1</sequence-identity>
+        <data-type>timestamp|0</data-type>
+        <default-expression>CURRENT_TIMESTAMP</default-expression>
       </column>
-      <column id="10" parent="3" name="user_id">
-        <data-type>int(11)|0</data-type>
-      </column>
-      <column id="11" parent="3" name="lat">
+      <column id="15" parent="10" name="lat">
         <data-type>double|0</data-type>
       </column>
-      <column id="12" parent="3" name="long">
+      <column id="16" parent="10" name="long">
         <data-type>double|0</data-type>
       </column>
-      <index id="13" parent="3" name="photos_users_id_fk">
+      <column id="17" parent="10" name="comment">
+        <data-type>text|0</data-type>
+      </column>
+      <column id="18" parent="10" name="filename">
+        <data-type>varchar(120)|0</data-type>
+      </column>
+      <index id="19" parent="10" name="photos_users_id_fk">
         <columns>user_id</columns>
         <desc-columns></desc-columns>
       </index>
-      <key id="14" parent="3" name="PRIMARY">
+      <key id="20" parent="10" name="PRIMARY">
         <columns>id</columns>
         <primary>1</primary>
       </key>
-      <foreign-key id="15" parent="3" name="photos_users_id_fk">
+      <foreign-key id="21" parent="10" name="photos_users_id_fk">
         <columns>user_id</columns>
         <ref-key>~.users.PRIMARY</ref-key>
         <cascade-update-rule>restrict</cascade-update-rule>
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
+      <column id="22" parent="11" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="23" parent="11" name="username">
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="24" parent="11" name="password">
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="25" parent="11" name="fullname">
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <key id="26" parent="11" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
     </database-model>
   </data-source>
 </component>

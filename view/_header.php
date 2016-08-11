@@ -32,10 +32,12 @@
                 ?>
                 <li><a href="?page=home">Home</a></li>
                 <li><a href="?page=users">Users</a></li>
-                <li><a href="?page=upload">Upload Image</a></li>
+                <li><a href="?page=upload">Upload Photo</a></li>
+                <li><a href="?page=photos">Photos</a></li>
             <?php } else { ?>
                 <li><a href="?page=home">Home</a></li>
                 <li><a href="?page=login">Login</a></li>
+                <li><a href="?page=photos">Photos</a></li>
             <?php } ?>
         </ul>
     </nav>

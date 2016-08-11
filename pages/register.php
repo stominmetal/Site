@@ -1,6 +1,6 @@
+<div class="message"><?php if (isset($message)) echo $message; ?></div>
 <div class="row">
     <div class="login register-container">
-        <div class="message"><?php if (isset($message)) echo $message; ?></div>
         <h1 class="login-title">Register</h1>
         <form method="post" class="form" id="my_form" name="my_form" onsubmit="return validateForm(this)">
             <?php if (!(isset($_POST['username']) && isset($_POST['password']) && isset($_POST['passwordConfirm']))) { ?>
@@ -40,6 +40,7 @@
                 $found = $result->fetch();
                 $result->close();
 
+
                 if ($found) {
                     echo "User already exists!";
                     echo "<div><input type='button' value='Back' onClick=\"history.go(-1);return true;\"></div>";
@@ -54,12 +55,7 @@
                     $register->execute();
                     $register->close();
 
-                    $_SESSION['user'] = [
-                        'username' => $username,
-                        'fullname' => $fullname
-                    ];
-
-                    redirect('?page=home');
+                    redirect('?page=login');
                     exit;
                 }
 

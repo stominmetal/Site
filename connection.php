@@ -9,34 +9,29 @@ $con = mysqli_connect($host, $user, $pass, $dbname);
 
 /*-----------------------------------------------*/
 
+//redirect to other page
+
 function redirect(string $url) :string
 {
     header("Location: ".$url);
     exit;
 }
 
-//taking picture information
+/*-----------------------------------------------*/
 
+//making thumbs
 
-
-/*
-try {
-    $options = [PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8', PDO::ATTR_PERSISTENT => true];
-    $db = new PDO("mysql:host=$host;dbname=$dbname", $user, $pass, $options);
-} catch (PDOException $ex) {
-    echo 'ERROR: ' . $ex->getMessage();
-    exit;
-}
-
-
-function query($connection, $sql, $params)
+function make_thumb($src, $dest, $desired_width)
 {
-    $sth = $connection->prepare($sql);
-    foreach ($params as $key => $value) {
-        $sth->bindParam(':' . $key, $value, PDO::PARAM_STR);
-    }
-    return $sth->execute();
-}
-*/
+    $source_image = imagecreatefromjpeg($src);
+    $width = imagesx($source_image);
+    $height = imagesy($source_image);
 
-/* ---------------------------------- */
+    $desired_height = floor($height * ($desired_width / $width));
+
+    $virtual_image = imagecreatetruecolor($desired_width, $desired_height);
+
+    imagecopyresampled($virtual_image, $source_image, 0, 0, 0, 0, $desired_width, $desired_height, $width, $height);
+
+    imagejpeg($virtual_image, $dest);
+}

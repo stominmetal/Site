@@ -12,7 +12,7 @@
     color: #FFFFFF;
     padding: 10px;
     max-width: 300px;
-    margin: 30px auto;
+    margin: 10px auto;
     border-radius: 8px;
 }
 
@@ -99,9 +99,14 @@ td {
 }
 
 .message {
-    color: #FF0000;
+    color: #FFFFFF;
+    background: #FF0000;
+    font-size: 18px;
     font-weight: bold;
     text-align: center;
     width: 100%;
-    padding: 10px;
+    margin: 5px;
+    border: 3px;
+    border-style: solid;
+    border-radius: 2px;
 }

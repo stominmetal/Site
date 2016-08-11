@@ -3,7 +3,7 @@ var map;
 function mapInit() {
     var mapProp = {
         center: new google.maps.LatLng(48.8566,2.3522),
-        zoom: 7,
+        zoom: 2,
         mapTypeId: google.maps.MapTypeId.ROADMAP
     };
 
@@ -20,7 +20,7 @@ function mapInit() {
 
         google.maps.event.addListener(marker, 'click', (function(marker, i) {
             return function() {
-                infoWindow.setContent("<img src='https://image.freepik.com/free-vector/background-of-france-with-eiffel-tower_1057-306.jpg' style='width: 150px;'/><br> <strong>User: </strong>"+point.user_name+"<strong><br>Lat: </strong>"+point.lat+"<strong><br>Long: </strong>"+point.long);
+                infoWindow.setContent("<a href='photos/" + point.filename +"' target='_blank'><img src='thumbs/" + point.filename + "'/></a><br> <strong>User: </strong>"+point.user_name+"<strong><br>Upload Date: </strong>"+point.upload_time+"<strong><br>Photo Date: </strong>"+point.date+"<strong><br>Device Model: </strong>"+point.device_model);
                 infoWindow.open(map, marker);
             }
         })(marker, key));
