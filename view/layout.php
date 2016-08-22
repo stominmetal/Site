@@ -33,8 +33,6 @@
         integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous">
 </script>
 
-<script src="../js/date.format.js"></script>
-
 <!--Google Maps API Library-->
 <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD73w03Ds7-bienx-1VKScLJernyc7be4c">

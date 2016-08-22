@@ -149,3 +149,9 @@ form > input > .btn {
     color: white;
     text-shadow: none;
 }
+
+.rigth {
+    max-width: 49%;
+
+}
+
