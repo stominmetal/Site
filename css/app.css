@@ -68,7 +68,7 @@ footer {
     font-size: 18px;
     color: white;
     background: #006992;
-    border-top: 2px solid black;
+    -top: 2px solid black;
     text-align: inherit;
 }
 

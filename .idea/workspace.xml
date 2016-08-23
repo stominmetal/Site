@@ -49,28 +49,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="photos.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="photos.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pages/photos.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="3" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="3" />
-              <folding />
+            <state relative-caret-position="354">
+              <caret line="27" column="250" selection-start-line="27" selection-start-column="250" selection-end-line="27" selection-end-column="250" />
+              <folding>
+                <marker date="1469798596776" expanded="true" signature="745:772" ph="SELECT COUNT... photos" />
+                <marker date="1469798596776" expanded="true" signature="945:988" ph="SELECT photo... photos" />
+                <marker date="1469798596776" expanded="true" signature="945:1151" ph="SELECT photo... photos" />
+                <marker date="1469798596776" expanded="true" signature="945:1152" ph="SELECT photo... photos" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="singlephoto.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="singlephoto.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/singlephoto.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="49" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
+            <state relative-caret-position="272">
+              <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="19" />
               <folding>
-                <marker date="1469792594097" expanded="true" signature="141:178" ph="SELECT filen... photos" />
-                <marker date="1469792594097" expanded="true" signature="141:179" ph="SELECT filen... photos" />
-                <marker date="1469792594097" expanded="true" signature="355:1052" ph="..." />
-                <marker date="1469792594097" expanded="true" signature="409:416" ph="SELECT filen... photos" />
-                <marker date="1469792594097" expanded="true" signature="409:581" ph="SELECT photo... photos" />
-                <marker date="1469792594097" expanded="true" signature="409:582" ph="SELECT photo... photos" />
+                <marker date="1469792757464" expanded="true" signature="141:178" ph="SELECT filen... photos" />
+                <marker date="1469792757464" expanded="true" signature="141:179" ph="SELECT filen... photos" />
+                <marker date="1469792757464" expanded="true" signature="355:1052" ph="..." />
+                <marker date="1469792757464" expanded="true" signature="409:416" ph="SELECT filen... photos" />
+                <marker date="1469792757464" expanded="true" signature="409:581" ph="SELECT photo... photos" />
+                <marker date="1469792757464" expanded="true" signature="409:582" ph="SELECT photo... photos" />
               </folding>
             </state>
           </provider>
@@ -79,8 +84,18 @@
       <file leaf-file-name="app.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/app.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="157" column="0" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
+            <state relative-caret-position="174">
+              <caret line="133" column="1" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/login.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="310">
+              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -113,9 +128,22 @@
       <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/3de8c040-30d6-49d5-977c-153a2b7a7627/console.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="39" />
+            <state relative-caret-position="51">
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="27" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="register.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/register.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="36" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="40" selection-end-column="33" />
+              <folding>
+                <marker date="1469637278214" expanded="true" signature="2038:2081" ph="SELECT usern... users" />
+                <marker date="1469637278214" expanded="true" signature="2805:2913" ph="INSERT INTO users... " />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -128,28 +156,6 @@
               <folding>
                 <marker date="1468925511062" expanded="true" signature="477:496" ph="SELECT * FRO... users" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/login.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="41" />
-              <folding>
-                <marker date="1469781116666" expanded="true" signature="942:1001" ph="SELECT id, p... users" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="layout.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view/layout.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -194,7 +200,6 @@
         <option value="$PROJECT_DIR$/../mySQL-Excercises/fail-excercises.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/9f565a15-9308-4b27-924b-7035b00b9441/console.sql" />
         <option value="$PROJECT_DIR$/pages/register.php" />
-        <option value="$PROJECT_DIR$/css/login.css" />
         <option value="$PROJECT_DIR$/connection.php" />
         <option value="$PROJECT_DIR$/js/app.js" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/4378fc1c-911a-44a4-92fc-5a9506044225/console.sql" />
@@ -205,12 +210,13 @@
         <option value="$PROJECT_DIR$/pages/login.php" />
         <option value="$PROJECT_DIR$/pages/upload.php" />
         <option value="$PROJECT_DIR$/view/layout.php" />
-        <option value="$PROJECT_DIR$/pages/photos.php" />
         <option value="$PROJECT_DIR$/view/_js_vars.php" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/3de8c040-30d6-49d5-977c-153a2b7a7627/console.sql" />
-        <option value="$PROJECT_DIR$/css/app.css" />
         <option value="$PROJECT_DIR$/js/map.js" />
         <option value="$PROJECT_DIR$/pages/singlephoto.php" />
+        <option value="$PROJECT_DIR$/css/app.css" />
+        <option value="$PROJECT_DIR$/css/login.css" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/3de8c040-30d6-49d5-977c-153a2b7a7627/console.sql" />
+        <option value="$PROJECT_DIR$/pages/photos.php" />
       </list>
     </option>
   </component>
@@ -506,18 +512,18 @@
       <workItem from="1469443568892" duration="17497000" />
       <workItem from="1469530234515" duration="25316000" />
       <workItem from="1469632384155" duration="6020000" />
-      <workItem from="1469698144847" duration="21367000" />
+      <workItem from="1469698144847" duration="27452000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="191428000" />
+    <option name="totallyTimeSpent" value="197513000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18438762" sideWeight="0.49713466" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3822342" sideWeight="0.49713466" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15830946" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4845222" sideWeight="0.5028653" order="7" side_tool="true" content_ui="tabs" />
@@ -732,14 +738,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/login.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="835">
-          <caret line="110" column="22" selection-start-line="110" selection-start-column="22" selection-end-line="110" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/home.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -753,17 +751,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/register.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-603">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1469637278214" expanded="true" signature="2038:2081" ph="SELECT usern... users" />
-            <marker date="1469637278214" expanded="true" signature="2805:2913" ph="INSERT INTO users... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -871,18 +858,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/photos.php">
+    <entry file="file://$PROJECT_DIR$/js/map.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="3" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/3de8c040-30d6-49d5-977c-153a2b7a7627/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="39" />
+        <state relative-caret-position="391">
+          <caret line="22" column="175" selection-start-line="22" selection-start-column="175" selection-end-line="22" selection-end-column="175" />
           <folding />
         </state>
       </provider>
@@ -897,8 +876,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/app.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="157" column="0" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
+        <state relative-caret-position="174">
+          <caret line="133" column="1" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -915,25 +894,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/map.js">
+    <entry file="file://$PROJECT_DIR$/css/login.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="22" column="175" selection-start-line="22" selection-start-column="175" selection-end-line="22" selection-end-column="175" />
+        <state relative-caret-position="310">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="36" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="40" selection-end-column="33" />
+          <folding>
+            <marker date="1469637278214" expanded="true" signature="2038:2081" ph="SELECT usern... users" />
+            <marker date="1469637278214" expanded="true" signature="2805:2913" ph="INSERT INTO users... " />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/singlephoto.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="49" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
+        <state relative-caret-position="272">
+          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="19" />
           <folding>
-            <marker date="1469792594097" expanded="true" signature="141:178" ph="SELECT filen... photos" />
-            <marker date="1469792594097" expanded="true" signature="141:179" ph="SELECT filen... photos" />
-            <marker date="1469792594097" expanded="true" signature="355:1052" ph="..." />
-            <marker date="1469792594097" expanded="true" signature="409:416" ph="SELECT filen... photos" />
-            <marker date="1469792594097" expanded="true" signature="409:581" ph="SELECT photo... photos" />
-            <marker date="1469792594097" expanded="true" signature="409:582" ph="SELECT photo... photos" />
+            <marker date="1469792757464" expanded="true" signature="141:178" ph="SELECT filen... photos" />
+            <marker date="1469792757464" expanded="true" signature="141:179" ph="SELECT filen... photos" />
+            <marker date="1469792757464" expanded="true" signature="355:1052" ph="..." />
+            <marker date="1469792757464" expanded="true" signature="409:416" ph="SELECT filen... photos" />
+            <marker date="1469792757464" expanded="true" signature="409:581" ph="SELECT photo... photos" />
+            <marker date="1469792757464" expanded="true" signature="409:582" ph="SELECT photo... photos" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/3de8c040-30d6-49d5-977c-153a2b7a7627/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/photos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="27" column="250" selection-start-line="27" selection-start-column="250" selection-end-line="27" selection-end-column="250" />
+          <folding>
+            <marker date="1469798596776" expanded="true" signature="745:772" ph="SELECT COUNT... photos" />
+            <marker date="1469798596776" expanded="true" signature="945:988" ph="SELECT photo... photos" />
+            <marker date="1469798596776" expanded="true" signature="945:1151" ph="SELECT photo... photos" />
+            <marker date="1469798596776" expanded="true" signature="945:1152" ph="SELECT photo... photos" />
           </folding>
         </state>
       </provider>
