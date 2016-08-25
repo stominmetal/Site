@@ -1,6 +1,5 @@
 <div class="row">
     <div class="border">
-        <?php if (isset($_SESSION['user'])) { ?>
             <p>
             <table class="table" width='100%'>
                 <tr>
@@ -30,7 +29,7 @@
                 while ($row = mysqli_fetch_array($result)) {
                     echo "<tr>";
                     echo "<td class=\"table\">$row[id]</td>";
-                    echo "<td class=\"table\"><img src='thumbs/$row[filename]'/></td>";
+                    echo "<td class=\"table\"><a href=\"?page=singlephoto&id=$row[id]\"><img src='thumbs/$row[filename]' style='margin: 5px auto'/></a></td>";
                     echo "<td class=\"table\">$row[user_name]</td>";
                     echo "<td class=\"table\">$row[comment]</td>";
                     echo "<td class=\"table\">$row[date]</td>";
@@ -53,8 +52,5 @@
                 echo "<a href = \"?page=photos&p=$pnext\" class=\"btn\">Next</a>";
             }
             ?>
-        <?php } else {
-            include('notLoggedIn.php');
-        } ?>
     </div>
 </div>
