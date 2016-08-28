@@ -28,6 +28,7 @@
                 <li><a href="?page=home">Home</a></li>
                 <li><a href="?page=users">Users</a></li>
                 <li><a href="?page=photos">Photos</a></li>
+                <li><a href="?page=myphotos">My Photos</a></li>
                 <li><a href="?page=upload">Upload Photo</a></li>
             <?php } else { ?>
                 <li><a href="?page=home">Home</a></li>

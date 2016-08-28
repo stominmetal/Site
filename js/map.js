@@ -15,6 +15,7 @@ function mapInit() {
     points.forEach(function (point, key, array) {
         marker = new google.maps.Marker({
             position: new google.maps.LatLng(point.lat, point.long),
+            icon: 'js/sdsdssdsd.png',
             map: map
         });
 
