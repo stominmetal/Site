@@ -1,7 +1,7 @@
 <div class="row">
     <div class="border register-container">
         <div class='border authentication'>
-            <h1>Thank you for uploading</h1>
+            <h1>Delete was successful</h1>
             <input type="submit" class="btn redBtn" onclick="window.location.replace('?page=home')" id="home" value="Home">
             <input type="submit" class="btn redBtn" onclick="window.location.replace('?page=upload')" id="upload" value="Upload another photo">
             <input type="submit" class="btn redBtn" onclick="window.location.replace('?page=photos')" id="upload" value="All Photos">

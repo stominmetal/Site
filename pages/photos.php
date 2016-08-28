@@ -6,6 +6,7 @@
                     <th class="table">Photo ID</th>
                     <th class="table">Photo</th>
                     <th class="table">User</th>
+                    <th class="table">Device Model</th>
                     <th class="table">Comment</th>
                     <th class="table">Date</th>
                     <th class="table">Uploaded</th>
@@ -31,6 +32,7 @@
                     echo "<td class=\"table\">$row[id]</td>";
                     echo "<td class=\"table\"><a href=\"?page=singlephoto&id=$row[id]\"><img src='thumbs/$row[filename]' style='margin: 5px auto'/></a></td>";
                     echo "<td class=\"table\">$row[user_name]</td>";
+                    echo "<td class=\"table\">$row[device_model]</td>";
                     echo "<td class=\"table\">$row[comment]</td>";
                     echo "<td class=\"table\">$row[date]</td>";
                     echo "<td class=\"table\">$row[upload_time]</td>";

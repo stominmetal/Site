@@ -38,3 +38,10 @@ function validateForm() {
     }
     return true;
 }
+
+//alert
+
+function click()
+{
+    confirm("Do you want to delete this?")
+}

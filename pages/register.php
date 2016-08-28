@@ -56,7 +56,6 @@
                     $register->close();
 
                     redirect('?page=login');
-                    exit;
                 }
 
                 //creating user
