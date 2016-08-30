@@ -5,7 +5,6 @@
     <title>Map</title>
     <link href='css/app.css' rel='stylesheet' type='text/css'/>
     <link href='css/login.css' rel='stylesheet' type='text/css'>
-    <script src="js/app.js"></script>
 </head>
 <body>
 
@@ -33,10 +32,9 @@
         integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous">
 </script>
 
-<!--Google Maps API Library-->
-<script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD73w03Ds7-bienx-1VKScLJernyc7be4c">
-</script>
+
+
+<script src="js/app.js"></script>
 
 <!--JS-->
 <?php

@@ -12,13 +12,13 @@ $('#login').click(function () {
 
 // </editor-fold>
 
-// <editor-fold desc="Validation" defaultstate="collapsed">
+// <editor-fold desc="Validations" defaultstate="collapsed">
 
 function validateForm() {
-    var username = document.forms["my_form"]["username"].value;
-    var fullname = document.forms["my_form"]["fullname"].value;
-    var pass1 = document.forms["my_form"]["password"].value;
-    var pass2 = document.forms["my_form"]["passwordConfirm"].value;
+    var username = document.getElementById("username").value;
+    var fullname = document.getElementById("fullname").value;
+    var pass1 = document.getElementById("password").value;
+    var pass2 = document.getElementById("passwordConfirm").value;
 
     if (username.length < 3) {
         $(".message").html("Username must be at least 3 characters!");
@@ -39,9 +39,29 @@ function validateForm() {
     return true;
 }
 
+//upload validations
+
+function validateUploadForm() {
+    var latitude = document.getElementById("lat").value;
+    var longitude = document.getElementById("long").value;
+
+    if (!(latitude >= -90 && latitude <= 90)) {
+        $(".message").html("Latitude must be a real number between -90 and 90.");
+        return false;
+    }
+    if (!(longitude >= -180 && longitude <= 180)) {
+        $(".message").html("Longitude must be a real number between -180 and 180.");
+        return false;
+    }
+    return true;
+}
+
+// </editor-fold>
+
 //alert
 
-function click()
-{
-    confirm("Do you want to delete this?")
+function myFunction(id) {
+    if (confirm('Click "Ok" if you want to delete this photo')) {
+        window.location.replace("?page=delete&id=" + id);
+    }
 }

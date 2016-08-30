@@ -1,3 +1,4 @@
+<div class="message"><?php if (isset($_SESSION['wronglogin']['msg'])) {echo $_SESSION['wronglogin']['msg'];} ?></div>
 <div class="row">
     <div class="login">
         <h1 class="login-title">Login</h1>
@@ -31,6 +32,9 @@
                     redirect("?page=home");
 
                 } else {
+                    $_SESSION['wronglogin'] = [
+                      "msg" => "Sorry, we couldn't find that combination of username and password."
+                    ];
                     redirect("?page=login");
                 }
             }

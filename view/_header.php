@@ -5,8 +5,8 @@
         </a>
 
         <div class="col">
-            <h1>Map</h1>
-            <h2>Google Map API Excersises</h2>
+            <h1>Photo Sharing</h1>
+            <h2>Softuni Project</h2>
         </div>
 
         <?php
@@ -25,7 +25,7 @@
             <?php
             if (isset($_SESSION['user'])) {
                 ?>
-                <li><a href="?page=home">Home</a></li>
+                <li><a href="?page=home" class="home"><img src="images/home_icon_button.png"></a></li>
                 <li><a href="?page=users">Users</a></li>
                 <li><a href="?page=photos">Photos</a></li>
                 <li><a href="?page=myphotos">My Photos</a></li>
