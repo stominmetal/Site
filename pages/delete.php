@@ -13,5 +13,6 @@ $result->close();
 
 unlink("photos/$filename");
 unlink("thumbs/$filename");
-redirect("?page=successfuldelete");
+$_SESSION['delete']['success'] = "Photo was successfully deleted.";
+redirect("?page=myphotos");
 

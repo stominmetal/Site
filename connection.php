@@ -1,9 +1,9 @@
 <?php
 // configuration
 $host = 'localhost';
-$dbname = 'vitron_stomin';
-$user = 'root';
-$pass = '';
+$dbname = 'softuni';
+$user = 'stomin';
+$pass = '1q2a3z4';
 
 $con = mysqli_connect($host, $user, $pass, $dbname);
 

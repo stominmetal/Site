@@ -1,16 +1,19 @@
 <?php
 
 $error_msg = false;
+$success_msg = false;
 
 if (isset($_SESSION['upload']['msg'])) {
     $error_msg = $_SESSION['upload']['msg'];
     $_SESSION['upload']['msg'] = false;
 }
 
-if ($error_msg === false && isset($_POST['upload'])) {
-    // tova se setva sled validate i error
-    /*$_SESSION['upload']['msg']='asdasdasd';
-    redirect('?page=upload');*/
+if (isset($_SESSION['upload']['success'])) {
+    $success_msg = $_SESSION['upload']['success'];
+    $_SESSION['upload']['success'] = false;
+}
+
+if ($error_msg === false && $success_msg === false && isset($_POST['upload'])) {
 
     global $con;
     $user_id = $_SESSION['user']['id'];
@@ -22,7 +25,7 @@ if ($error_msg === false && isset($_POST['upload'])) {
     $type = explode("/", $_FILES["UFile"]["type"])[1];
     $exif = exif_read_data($_FILES['UFile']['tmp_name']);
 
-    if (isset($exif['Make']) || isset($exif['DateTime']) || isset($exif['Model'])) {
+    if (isset($exif['Make']) && isset($exif['DateTime']) && isset($exif['Model'])) {
         $time = $exif['DateTime'];
         $model = $exif['Make'] . " " . $exif['Model'];
     } else {
@@ -30,19 +33,28 @@ if ($error_msg === false && isset($_POST['upload'])) {
         $model = "N/A";
     }
 
-    $insert = $con->prepare("INSERT INTO photos (`user_id`, `lat`, `long`, `date`, `device_model`, `comment`, `filename`) VALUES (?,?,?,?,?,?,?)");
-    $insert->bind_param("iddssss", $user_id, $lat, $long, $time, $model, $comment, $filename);
-    $insert->execute();
-    $success = $insert->fetch();
-    $insert->close();
 
-    copy($_FILES['UFile']['tmp_name'], $filepath);
-    make_thumb($filepath, "thumbs/" . $filename, 200);
+    if ($type == "jpg" || $type == "jpeg") {
 
-    redirect("?page=thank you");
+        $insert = $con->prepare("INSERT INTO photos (`user_id`, `lat`, `long`, `date`, `device_model`, `comment`, `filename`) VALUES (?,?,?,?,?,?,?)");
+        $insert->bind_param("iddssss", $user_id, $lat, $long, $time, $model, $comment, $filename);
+        $insert->execute();
+        $success = $insert->fetch();
+        $insert->close();
+
+        copy($_FILES['UFile']['tmp_name'], $filepath);
+        make_thumb($filepath, "thumbs/" . $filename, 200);
+
+        $_SESSION['upload']['success'] = "Upload was successful.";
+        redirect("?page=upload");
+    } else {
+        $_SESSION['upload']['msg'] = 'File must be JPG or JPEG.';
+        redirect('?page=upload');
+    }
 }
 ?>
-<div class="message"><?php if ($error_msg !== FALSE) echo $error_msg?></div>
+<div class="message"><?php if ($error_msg !== FALSE) echo $error_msg; ?></div>
+<div class="message success" id="success"><?php if ($success_msg !== FALSE) echo $success_msg; ?></div>
 <div class="row">
     <div class="login register-container">
         <?php if (isset($_SESSION['user'])) { ?>

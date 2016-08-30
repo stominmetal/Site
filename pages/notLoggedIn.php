@@ -6,7 +6,9 @@
             <input type="submit" class="btn redBtn" onclick="window.location.replace('?page=home')" id="home"
                    value="Home">
             <input type="submit" class="btn redBtn" onclick="window.location.replace('?page=login')" id="login"
-                   value="Go to login page">
+                   value="Login">
+            <input type="submit" class="btn redBtn" onclick="window.location.replace('?page=register')" id="login"
+                   value="Register">
         </div>
     </div>
 </div>

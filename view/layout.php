@@ -16,10 +16,8 @@
         if(!(in_array($page, ['home']))){
             include(__DIR__."/../pages//".$page.'.php');
         } else {?>
-    <div class="left">
         <!--Content-->
         <?php include(__DIR__.'/../pages//'.$page.'.php'); ?>
-    </div>
 
     <?php } ?>
 </div>
@@ -31,8 +29,6 @@
 <script src="https://code.jquery.com/jquery-3.0.0.min.js"
         integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous">
 </script>
-
-
 
 <script src="js/app.js"></script>
 

@@ -1,16 +1,4 @@
-// <editor-fold desc="Redirects" defaultstate="collapsed">
-
-
-$('#home').click(function () {
-    window.location.href = '?page=home';
-});
-
-$('#login').click(function () {
-    window.location.href = '?page=login';
-});
-
-
-// </editor-fold>
+$("#success").fadeOut(2500);
 
 // <editor-fold desc="Validations" defaultstate="collapsed">
 

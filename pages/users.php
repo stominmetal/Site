@@ -14,9 +14,9 @@
 
                 while ($row = mysqli_fetch_array($result)) {
                     echo "<tr>";
-                    echo "<td class=\"table\">$row[id]</td>";
-                    echo "<td class=\"table\">$row[username]</td>";
-                    echo "<td class=\"table\">$row[fullname]</td>";
+                    echo "<td class=\"table\">htmlspecialchars($row[id])</td>";
+                    echo "<td class=\"table\">htmlspecialchars($row[username])</td>";
+                    echo "<td class=\"table\">htmlspecialchars($row[fullname])</td>";
                     echo "</tr>";
                 }
                 ?>
