@@ -53,8 +53,8 @@ if ($error_msg === false && $success_msg === false && isset($_POST['upload'])) {
     }
 }
 ?>
-<div class="message"><?php if ($error_msg !== FALSE) echo $error_msg; ?></div>
-<div class="message success" id="success"><?php if ($success_msg !== FALSE) echo $success_msg; ?></div>
+<div class="message"><?php if ($error_msg !== FALSE) echo htmlspecialchars($error_msg); ?></div>
+<div class="message success" id="success"><?php if ($success_msg !== FALSE) echo htmlspecialchars($success_msg); ?></div>
 <div class="row">
     <div class="login register-container">
         <?php if (isset($_SESSION['user'])) { ?>

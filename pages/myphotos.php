@@ -20,7 +20,7 @@ $result = mysqli_query($con, "SELECT photos.id, `lat`,`long`,`filename`,`comment
 $pnext = $p + 1;
 $pprev = $p - 1;
 ?>
-<div class="message success" id="success"><?php if (isset($_SESSION['delete']['success'])) {echo $_SESSION['delete']['success'];
+<div class="message success" id="success"><?php if (isset($_SESSION['delete']['success'])) {echo htmlspecialchars($_SESSION['delete']['success']);
 unset($_SESSION['delete']['success']);}; ?></div>
 <div class="row">
     <div class="border">
@@ -38,23 +38,15 @@ unset($_SESSION['delete']['success']);}; ?></div>
             </tr>
             <?php
             while ($row = mysqli_fetch_array($result)) {
-                $id = htmlspecialchars($row['id']);
-                $username = htmlspecialchars($row['user_name']);
-                $uploadTime = htmlspecialchars($row['upload_time']);
-                $date = htmlspecialchars($row['date']);
-                $comment = htmlspecialchars($row['comment']);
-                $deviceModel = htmlspecialchars($row['device_model']);
-                $filename = htmlspecialchars($row['filename']);
-
                 echo "<tr>";
-                echo "<td class=\"table\">$id</td>";
-                echo "<td class=\"table\"><a href=\"?page=singlephoto&id=$id\"><img src='thumbs/$filename' style='margin: 5px auto'/></a></td>";
-                echo "<td class=\"table\">$username</td>";
-                echo "<td class=\"table\">$deviceModel</td>";
-                echo "<td class=\"table\">$comment</td>";
-                echo "<td class=\"table\">$date</td>";
-                echo "<td class=\"table\">$uploadTime</td>";
-                echo "<td class=\"table\"><a href='#' onclick=\"myFunction($id)\" class='btn'>Delete</a></td>";
+                echo "<td class=\"table\">" . htmlspecialchars($row['id']) . "</td>";
+                echo "<td class=\"table\"><a href=\"?page=singlephoto&id=" . htmlspecialchars($row['id']) . "\"><img src='thumbs/" . htmlspecialchars($row['filename']) . "' style='margin: 5px auto'/></a></td>";
+                echo "<td class=\"table\">" . htmlspecialchars($row['user_name']) . "</td>";
+                echo "<td class=\"table\">" . htmlspecialchars($row['device_model']) . "</td>";
+                echo "<td class=\"table\">" . htmlspecialchars($row['comment']) . "</td>";
+                echo "<td class=\"table\">" . htmlspecialchars($row['date']) . "</td>";
+                echo "<td class=\"table\">$" . htmlspecialchars($row['upload_time']) . "</td>";
+                echo "<td class=\"table\"><a href='#' onclick=\"myFunction(" . htmlspecialchars($row['id']) . ")\" class='btn'>Delete</a></td>";
                 echo "</tr>";
             }
 
